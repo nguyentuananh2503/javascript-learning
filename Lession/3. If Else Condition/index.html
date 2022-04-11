@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button type="button" onclick="studentRanking()">Tính điểm trung bình</button>
+    <label>danh gia </label>
+    <input id="danhgia" type="text" value="">
+    <label >Trung binh mon</label>
+    <input id="Tbm" type="text" value="">
+    
+    
+    <script>
+        /*
+            Viết chương trình in ra kết quả học tập với đầu vào là điểm 3 môn Toán Văn Anh
+            Công thức tính điểm trung bình như sau: Toán + Văn + (Anh * 2) / 4
+            Nếu điểm trung bình 3 môn >= 8 thì in ra Giỏi
+            Nếu điểm trung bình 3 mon >= 7 thì in ra Khá
+            Nếu điểm trung bình 3 môn >= 6 thì in ra TB
+            Nếu điểm trung bình 3 môn < 6 thì in ra Yếu
+        */
+       
+         
+        function studentRanking() {
+        var diemt = prompt('Nhap diem Toan', '');
+        
+        var diemv = prompt('Nhap diem Van', '');
+        var diema = prompt('Nhap diem Anh', '');
+       
+        tb=(parseInt(diemt.value)+parseInt(diema.value)*2+parseInt(diemv.value))/4;
+        var dg=Document.getElementById('danhgia');
+        var tb=Document.getElementById('Tbm');
+ if(tb>=8)
+ {
+  dg.innerText='Giỏi';
+ }
+ else if(tb>=7)
+ {
+  dg.innerText='Khá';
+ }
+ else if(tb>=6)
+ {
+  dg.innerText='Trung bình';
+ }
+ else dg.innerText='Ngu';
+    
+        
+        
+    }
+
+        
+            
+
+        
+            // Sử dụng hàm prompt để thực hiện hỏi và lấy số điểm 
+        
+    </script>
+</body>
+</html>

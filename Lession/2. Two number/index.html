@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <label>Number a</label>
+    <input type="number" id="inputNumberA" />
+    <br/>
+    <label>Number b</label>
+    <input type="number" id="inputNumberB" />
+    <br/>
+    <button  onclick="cong2so()">Additional 2 number</button>
+    <input id = "kq" type="text" value = ""/>
+    
+
+    <script>
+        /* 
+            Viết chương trình cộng 2 số a và b
+            2 số a và b được nhập từ input và 1 button với tên calculate khi
+            ấn vào button này thì thực hiện cộng 2 số và in kết quả ra màn hình
+         */
+
+         function cong2so() {
+            var a = document.getElementById("inputNumberA").value;
+            var b = document.getElementById("inputNumberB").value;
+            var ketqua = Number(a) + Number(b);
+            document.getElementById("kq").value = ketqua;
+        };
+         </script>
+</body>
+</html>
