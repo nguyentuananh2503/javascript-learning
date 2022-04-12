@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <button id="solve" type="button" onclick="whileLoop()">Solve</button>
 
@@ -18,15 +20,19 @@
         */
 
         function whileLoop() {
-            var arrNumber = [1, 4, 2, 3, 2, 5 , 2, 10, 2];
-            var i = 1;
-            while (i < arrNumber.length){
-            if (i > 5) {
-            break;
-              console.log(arrNumber[i]);
-    }   
-}
+            var arrNumber = [1, 4, 2, 3, 2, 5, 2, 10, 2];
+            var i = 0;
+            while (i < arrNumber.length) {
+                if (arrNumber[i] > 5) {
+                    
+                    break;
+                }
+                console.log(arrNumber[i]);
+            
+                
+            }
         }
     </script>
 </body>
+
 </html>
