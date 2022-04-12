@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+
+    <label>Ex1</label> <br/>    
+    <h1 id="Ex1"></h1>
+
+    <br/>
+
+    <label>Ex2</label> <br/>
+    <input id="inputEx2" type="text" />
+    <button type="button" onclick="Ex2()" id="">Calculate</button>
+
+    
+
+    <script type="text/javascript">
+        /* 
+            - Ex 1: In ra màn hình "Hello World" và nằm trong thẻ H1 của document
+            - Ex 2: Viết chương trình nhập vào 1 ô input text và 1 button click thì thực hiện alert 
+                giá trị trong input text thông qua hàm alert
+        */
+        
+        function Ex1() {
+            // Thực hiện in ra thẻ H1 với id là ex1 bằng câu lệnh select document by id
+            document.getElementById("Ex1").innerHTML= "Hello World";
+        }
+
+        function Ex2() {
+            // Sử dụng hàm bắt sự kiện của button (google)
+            var a = document.getElementById("inputEx2").value    
+            alert(a);
+        }
+
+        Ex1();
+    </script>
+</body>
+</html>
